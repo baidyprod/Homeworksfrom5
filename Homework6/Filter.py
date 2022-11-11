@@ -1,6 +1,6 @@
 def your_filter(function, iterable):
     res = []
-    if function == None:
+    if function is None:
         for item in iterable:
             if bool(item):
                 res.append(item)

@@ -5,11 +5,11 @@ def your_range(a:int, b:int=None, c:int=None) -> list:
     range(start, stop) - default step value = 1
     range(start, stop, step)
     '''
-    if b == None and c == None:
+    if b is None and c is None:
         start = 0
         stop = a
         step = 1
-    elif c == None:
+    elif c is None:
         start = a
         stop = b
         step = 1

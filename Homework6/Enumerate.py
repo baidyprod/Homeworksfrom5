@@ -1,4 +1,3 @@
 def your_enumerate(iterable, start=0):
-    indexes = list(range(start, start+len(iterable)))
-    res = list(zip(indexes, iterable))
+    res = list(zip(range(start, start + len(iterable)), iterable))
     return res
