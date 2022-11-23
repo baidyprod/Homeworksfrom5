@@ -27,3 +27,10 @@ def your_range(a:int, b:int=None, c:int=None) -> list:
             res.append(start)
             start += step
     return res
+
+print(list(range(10)) == your_range(10))
+print(list(range(10, 20)) == your_range(10, 20))
+print(list(range(10, 20, 3)) == your_range(10, 20, 3))
+print(list(range(20, 10, 3)) == your_range(20, 10, 3))
+print(list(range(20, 10, -3)) == your_range(20, 10, -3))
+print(list(range(20, 10)) == your_range(20, 10))

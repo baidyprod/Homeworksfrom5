@@ -10,3 +10,7 @@ def your_zip(*iterables):
             tmp.append(coll[index])
         res.append(tuple(tmp))
     return res
+
+print(list(zip(range(10), range(15), range(8))) == your_zip(range(10), range(15), range(8)))
+print(list(zip(range(10), range(15), [])) == your_zip(range(10), range(15), []))
+print(list(zip(range(10))) == your_zip(range(10)))

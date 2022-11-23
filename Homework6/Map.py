@@ -16,3 +16,6 @@ def your_map(func, *iterables__) -> list:
         for item in a:
             res.append(item)
     return res
+
+print(list(map(int, '1234567890')) == your_map(int, '1234567890'))
+print(list(map(min, range(10), range(20, 30), range(25, 15, -1))) == your_map(min, range(10), range(20, 30), range(25, 15, -1)))

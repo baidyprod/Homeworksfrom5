@@ -9,3 +9,6 @@ def your_filter(function, iterable):
             if bool(function(item)):
                 res.append(item)
     return res
+
+print(list(filter(None, [0, 1, '', 2, 3, [], 5, {}, None, 6, False])) == your_filter(None, [0, 1, '', 2, 3, [], 5, {}, None, 6, False]))
+print(list(filter(lambda a: a % 2 == 0, range(10+1))) == your_filter(lambda a: a % 2 == 0, range(10+1)))
